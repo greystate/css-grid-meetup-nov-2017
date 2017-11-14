@@ -1,0 +1,36 @@
+html, body { margin: 0; padding: 0; }
+
+body {
+	background: #fff;
+	color: #314159;
+	padding: 1em;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+	font-family: "Marker Felt";
+	text-align: center;
+}
+
+ul {
+	margin: 2em;
+	font-size: 3em;
+}
+
+li {
+	line-height: 2;
+}
+
+.basic {
+	font-size: 6em;
+	margin: auto;
+	max-width: max-content;
+	list-style: none;
+	padding: 0;
+}
+
+.basic li {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
