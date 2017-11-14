@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Grid Basics</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="basics.css">
+	<style>
+		.advanced {
+			width: 100%;
+			height: 100%;
+			
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 15px;
+		}
+
+		h1 { display: none; }
+	</style>
+</head>
+<body>
+
+<h1>CSS Grid Basics</h1>
+
+<ul class="advanced">
+	<li>🦖</li>
+	<li>🦕</li>
+	<li>🦖</li>
+	<li>🦕</li>
+	<li>🦖</li>
+	<li>🦕</li>
+	<li>🦖</li>
+	<li>🦕</li>
+	<li>🦖</li>
+</ul>
+
+</body>
+</html>
