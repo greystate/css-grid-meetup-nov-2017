@@ -99,6 +99,20 @@ ul {
 
 ---
 
+# Ny CSS unit: `fr`(action)
+
+```less
+grid-template-columns: 2fr 1fr 3fr;
+```
+
+---
+
+> **“Lad os da lige prøve det også…”**
+
+^ examples/advanced-start.html
+
+---
+
 # [fit] Fallback
 
 ---
