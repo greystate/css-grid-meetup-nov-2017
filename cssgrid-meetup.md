@@ -99,17 +99,75 @@ ul {
 
 ---
 
-# Ny CSS unit: `fr`(action)
+# Ny CSS unit: `fr`
+
+(**fr**action)
 
 ```less
 grid-template-columns: 2fr 1fr 3fr;
 ```
+
+Deler "resten" op i dele (efter `grid-gap` er trukket fra)
 
 ---
 
 > **“Lad os da lige prøve det også…”**
 
 ^ examples/advanced-start.html
+
+---
+
+# [fit] Explicit placering
+
+^ Indtil videre har vi ladet tingene "falde på plads"
+
+---
+
+```less
+ul {
+	display: grid;
+	grid-template-rows: 100px 200px 200px;
+	grid-template-columns: repeat(6, 100px);
+}
+```
+
+---
+
+```less, [.highlight: 8-9]
+ul {
+	display: grid;
+	grid-template-rows: 100px 200px 200px;
+	grid-template-columns: repeat(6, 100px);
+}
+
+li:nth-child(2) {
+	grid-column: 5;
+	grid-row: 2;
+}
+```
+
+^ Grid *lines*, *tracks* etc.
+
+---
+
+```less, [.highlight: 8]
+ul {
+	display: grid;
+	grid-template-rows: 100px 200px 200px;
+	grid-template-columns: repeat(6, 100px);
+}
+
+li:nth-child(2) {
+	grid-column: 5 / span 2;
+	grid-row: 2;
+}
+```
+
+---
+
+## [fit] _CSS_
+
+^ Lad os rode med det også...
 
 ---
 
@@ -140,3 +198,22 @@ grid-template-columns: 2fr 1fr 3fr;
 ```
 
 ^ Hvis `grid` er supporteret, er `@supports()` også!
+
+
+---
+
+> Lad os alle kode...
+
+^ 2 eller 3 sammen
+
+^ Lige et par links til hvis man sidder fast...
+
+---
+
+# Links
+
+Rachel Andrew: [Grid by Example](https://gridbyexample.com) (`gridbyexample.com`)
+
+Jen Simmons: [Layout Lab](http://labs.jensimmons.com) (`labs.jensimmons.com`)
+
+
