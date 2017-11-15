@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Grid Basics (IV)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="basics.css">
+</head>
+<body>
+
+<main>
+	<header>
+		<h1>CSS Grid Basics</h1>
+		<h2>— så kan vi lære det...</h2>
+	</header>
+	
+	<article>
+		<p>
+			The content of a <code>&lt;main&gt;</code> element should be unique to the
+			document or section the element contains. Content that is repeated across
+			a set of documents or document sections such as sidebars, navigation
+			links, copyright information, site logos, and search forms should not be
+			included unless the search form is the main function of the page.
+		</p>
+
+		<p>
+			<code>&lt;main&gt;</code> doesn't contribute to the document's outline; that is, unlike
+			elements such as <code>&lt;body&gt;</code>, headings such as <code>&lt;h2&gt;</code>, and such,
+			<code>&lt;main&gt;</code> doesn't affect the DOM's concept of the structure of the page.
+			It's strictly informative.
+		</p>
+
+		<p>Differences between the WHATWG and W3C specifications</p>
+
+		<p>
+			The <code>&lt;main&gt;</code> element's definition is substantially different
+			between WHATWG's living standard—which is the specification MDN uses by
+			convention—and the W3C specification. As compared to the description given
+			above, here are the differences between the two specifications:
+		</p>
+
+		<p>
+			While the WHATWG living standard for HTML allows multiple
+			<code>&lt;main&gt;</code> elements in a page, the W3C version of the specification does
+			not, unless all but one of them are hidden using the hidden attribute. The
+			WHATWG specification permits <code>&lt;main&gt;</code> to be used anywhere flow content is
+			allowed. On the other hand, the W3C version of the HTML specification doesn't
+			allow <code>&lt;main&gt;</code> to be a descendant of <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>,
+			<code>&lt;footer&gt;</code>, <code>&lt;header&gt;</code>, or <code>&lt;nav&gt;</code>. This seems like a short set
+			of differences, but the <code>&lt;main&gt;</code> element is quite simple at a functional
+			level, so the existence of these differences can have significant
+			consequences if you don't keep them in mind.
+		</p>
+	</article>
+	
+	<aside>
+		<blockquote>
+			Det er ikk' så tosset!
+		</blockquote>
+	</aside>
+	
+	<footer>
+		Copyright &copy; 2017
+	</footer>
+</main>
+
+</body>
+</html>
