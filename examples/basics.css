@@ -33,6 +33,7 @@ li {
 
 .basic {
 	max-width: max-content;
+	max-width: -moz-max-content;
 }
 
 .basic li,
