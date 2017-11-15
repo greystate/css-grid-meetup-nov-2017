@@ -171,11 +171,22 @@ li:nth-child(2) {
 
 ---
 
-# [fit] Fallback
+# [fit] Fallback??
+
+## Hvad med *XYZ* browser? 
 
 ---
 
 # [fit] `@supports()`
+
+---
+
+```less
+.page {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+}
+```
 
 ---
 
@@ -198,7 +209,6 @@ li:nth-child(2) {
 ```
 
 ^ Hvis `grid` er supporteret, er `@supports()` også!
-
 
 ---
 
