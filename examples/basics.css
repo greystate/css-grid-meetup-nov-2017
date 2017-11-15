@@ -24,21 +24,45 @@ li {
 	line-height: 2;
 }
 
-.basic, .advanced {
-	font-size: 6em;
+.basic, .advanced, .placement {
 	margin: auto;
 	list-style: none;
 	padding: 0;
 }
 
-.basic {
+.basic, .advanced {
+	font-size: 6em;
+}
+
+.basic, .placement {
 	max-width: max-content;
 	max-width: -moz-max-content;
 }
 
 .basic li,
-.advanced li {
+.advanced li,
+.placement li {
 	text-align: center;
 	background: rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.ascii header { background: rgba(0, 100, 0, 0.2); }
+.ascii article { background: rgba(0, 0, 100, 0.2); }
+.ascii aside { background: rgba(100, 100, 100, 0.2); }
+.ascii footer { background: rgba(0, 0, 200, 0.2); }
+
+.ascii h2, .ascii footer { text-align: center; }
+.ascii article { padding: 1em; }
+.ascii footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ascii code {
+	background: #ccc;
+	color: maroon;
+	font-size: 110%;
+}
+
